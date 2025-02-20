@@ -13,4 +13,5 @@
         <item name="android:statusBarColor">@color/primary</item>
 <!--        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>-->
     </style>
+
 </resources>

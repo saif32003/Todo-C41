@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
         android:id="@+id/top_view"
@@ -38,13 +39,13 @@
         app:layout_constraintTop_toBottomOf="@id/language_tv"
         app:startIconDrawable="@drawable/ic_languages">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTV_languages"
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/languages_autoCompleteTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_bold"
             android:inputType="none"
-            android:text="@string/english"
+            tools:text="@string/english"
             android:textColor="@color/blue" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,13 +78,13 @@
         app:layout_constraintTop_toBottomOf="@id/mode_tv"
         app:startIconDrawable="@drawable/ic_light_mode">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTV_modes"
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/modes_autoCompleteTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_bold"
             android:inputType="none"
-            android:text="@string/light"
+            tools:text="@string/light"
             android:textColor="@color/blue"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>

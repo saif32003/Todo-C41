@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.devtools.ksp")
+    alias(libs.plugins.kotlin.parcelize)
+
 }
 
 android {
@@ -37,6 +39,9 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    androidResources {
+        generateLocaleConfig = true
+    }
 }
 
 dependencies {
@@ -49,6 +54,7 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.material.calendarview)
+    implementation(libs.zerobranch.swipelayout)
 
 
     testImplementation(libs.junit)
