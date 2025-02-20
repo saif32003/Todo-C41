@@ -20,17 +20,19 @@
     <string name="light">Light</string>
     <string name="dark">Dark</string>
     <string name="english">English</string>
+    <string name="arabic">Arabic</string>
     <string name="title_required" translatable="false">Title Required</string>
     <string name="required_field" translatable="false">Required Field</string>
+    <string name="is_done">IS Done!</string>
 
     <string-array name="languages">
-        <item>English</item>
-        <item>Arabic</item>
+        <item>@string/english</item>
+        <item>@string/arabic</item>
     </string-array>
 
     <string-array name="modes">
-        <item>Light</item>
-        <item>Dark</item>
+        <item>@string/light</item>
+        <item>@string/dark</item>
     </string-array>
 
 </resources>
